@@ -1,0 +1,19 @@
+@import url(fields/f-index.css);
+
+form{
+  margin-top: 3rem;
+}
+
+fieldset{
+border: none;
+display: grid;
+gap: 1.5rem;
+
+
+}
+
+legend{
+  margin-bottom: 1.5rem;
+  font: 600 1rem/1.25 var(--font-family);
+  color: #292524;
+}
