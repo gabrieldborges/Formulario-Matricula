@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,8 +30,57 @@
             Preencha os dados abaixo para matricular seu filho na escola de
             educação infantil Estrelas do Amanhã.
           </p>
+
+          <form method="post" enctype="multipart/form-data">
+            <fieldset class="child-info">
+              <legend>Informações da criança</legend>
+
+              <div class="input-wrapper">
+                <label for="fullname">Nome completo</label>
+                <input
+                  type="text"
+                  id="fullname"
+                  placeholder="Nome da criança"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="birthday">Data de nascimento</label>
+                <input
+                  id="birthday"
+                  type="date"
+                  placeholder="DD/MM/AAAA"
+                  lang="pt-BR"
+                />
+              </div>
+
+              <div class="select-wrapper">
+                <label for="gender">Sexo</label>
+                <select name="gender" id="gender">
+                  <option value="female">Feminino</option>
+                  <option value="male">Masculino</option>
+                  <option value="na">Prefiro não responder</option>
+                </select>
+              </div>
+
+              <div class="textarea-wrapper">
+                <label for="med-info">Informações médicas</label>
+                <textarea name="med-info" id="med-info" cols="30" rows="10"
+                placeholder="A criança possui alergias? Se sim, descreva sobre as as alergias do aluno(a)."
+                ></textarea>
+              </div>
+
+              <div class="droparea-wrapper">
+                <label for="birth-certificate">Certidão de nascimento</label>
+                <input type="file" id="file" name="birth-certificate">
+                <img src="assets/icons/cloud-upload.svg" alt="">
+                <p>Clique aqui para <br> selecionar arquivos</p>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </main>
+
       <aside>
         <div class="aside-container">
           <header>
