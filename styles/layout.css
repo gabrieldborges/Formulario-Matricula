@@ -11,7 +11,7 @@
 
 main {
   overflow: auto;
-  height: 120vh;
+  height: 100%;
   & .main-container {
     max-width: 33rem;
     margin-left: auto;
