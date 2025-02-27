@@ -12,8 +12,8 @@ font: var(--text);
     all: unset;
     position: absolute;
     inset: 0;
-    width: 1.2rem;
-    height: 1.2rem;
+    z-index: 1;
+   
   }
 
 
@@ -21,6 +21,10 @@ font: var(--text);
     flex: 0 0 1.5rem;
     height: 1.5rem;
     background: url(../../assets/icons/checkbox-default.svg) no-repeat;
+  }
+  & a{
+position: relative;
+z-index: 2;
   }
 
   &:hover , &:focus-within {

@@ -1,6 +1,7 @@
 .dropzone{
   border: dashed .125rem var(--stroke-default);
   border-radius: .5rem;
+  transition: .2s ;
 
   display: grid;
   justify-items: center;
@@ -25,6 +26,7 @@ img{
 & p{
   color: #A8A29E;
 }
+
 
 &:hover , &:has(input:focus){
 border-width: 0.125rem;

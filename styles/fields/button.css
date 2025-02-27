@@ -1,0 +1,39 @@
+.actions-wrapper{
+  margin-top: 3rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+
+  & button{
+    all: unset;
+    width: 11.4375rem;
+    height: 4rem;
+    border-radius:.5rem ;
+    font: var(--text);
+    --border-color: ;
+    border: 1px solid var(--border-color) ;
+    text-align: center;
+    
+  }
+  .btn-primary{
+  color: #FFFFFF;
+  background-color:#E43A12;
+  --border-color: #E43A12;
+  &:hover ,&:focus{
+    background-color: #F3541C;
+  }
+  
+  }
+
+  .btn-secondary{
+    color: var(--text-highlight);
+    background-color: #FFFFFF;
+    &:hover , &:focus{
+      outline: .25rem var(--surface-secondary) solid;
+border: 0.0625rem solid var(--stroke-highlight);
+outline-offset: .1px;
+    }
+  }
+
+}
