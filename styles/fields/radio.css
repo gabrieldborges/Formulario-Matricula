@@ -43,6 +43,7 @@ position: relative;
 
   &:hover , &:focus-within{
 border: 1px solid var(--stroke-highlight);
+transition: border 0.3s;
 
     & .radio-image{
       background-image: url(../../assets/icons/radio-hover.svg) ;
@@ -50,7 +51,7 @@ border: 1px solid var(--stroke-highlight);
   }
 
   &:has(:checked) {
-    border: solid 2px var(--stroke-highlight);
+    border: solid 1px var(--stroke-highlight);
 
     & .radio-image{
       background-image: url(../../assets/icons/radio-checked.svg) ;
