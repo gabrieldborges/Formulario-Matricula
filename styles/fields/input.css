@@ -94,3 +94,18 @@ border: 0.0625rem solid var(--semantic-error) ;
 }
 
 }
+.textarea-wrapper{
+height: 100%;
+& textarea{
+  height: 9rem;
+}
+}
+@media(width >= 80em ){
+  .textarea-wrapper{
+height: 100%;
+& textarea{
+  height: auto;
+}
+  }
+
+}

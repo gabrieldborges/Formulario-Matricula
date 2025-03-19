@@ -1,20 +1,25 @@
+
+
+
 #app {
-  display: grid;
-  grid-template-columns: 51.25% 1fr;
+ 
   height: 100vh;
   overflow: hidden;
-  main,
-  aside {
+   aside {
     padding: 4rem;
   }
 }
+
+
 
 main {
   overflow: auto;
   height: 100%;
   & .main-container {
+    margin-inline: auto;
     max-width: 33rem;
-    margin-left: auto;
+    padding-block: 1.5rem;
+    padding-inline: 1.5rem;
   }
   & .back {
     display: flex;
@@ -28,6 +33,23 @@ main {
     color: var(--text-primary);
   }
 }
+
+@media(width >=80em){
+  #app{
+    display: grid;
+    grid-template-columns: 51.25% 1fr;
+  }
+  main{
+    padding: 4rem;
+    & .main-container{
+      padding-block: 0;
+      padding-inline: 0;
+    margin-left: auto;
+
+    }
+  }
+}
+
 
 aside {
   & .aside-container {

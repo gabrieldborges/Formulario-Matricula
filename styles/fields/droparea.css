@@ -1,4 +1,5 @@
 .dropzone{
+  height: 10rem;
   border: dashed .125rem var(--stroke-default);
   border-radius: .5rem;
   transition: .2s ;
@@ -41,5 +42,11 @@ background-color: var(--surface-secondary);
   stroke: var(--stroke-highlight);
 }
 }
+}
+
+@media(width >=80em){
+  .dropzone{
+  height: auto;
+  }
 }
 

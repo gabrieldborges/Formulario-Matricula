@@ -18,6 +18,16 @@
   <body>
     <div id="app">
       <main>
+        <div class="mobile-only">
+          <header class="header-class">
+            <img src="./assets/logo.svg" alt="school logo" />
+            <img
+              src="./assets/Illustration.svg"
+              alt="Kids sitting on the floor, around the teacher"
+            />
+          </header>
+        </div>
+
         <div class="main-container">
           <div class="back">
             <img
@@ -33,7 +43,6 @@
           </p>
 
           <form method="post" enctype="multipart/form-data">
-
             <fieldset class="child-info">
               <legend>Informações da criança</legend>
 
@@ -111,8 +120,6 @@
                   </p>
                 </div>
               </div>
-
-
             </fieldset>
 
             <fieldset class="address">
@@ -135,12 +142,11 @@
                   />
                 </div>
 
-                <div class="input-wrapper flex-1">
+                <div class="input-wrapper flex-1 m20">
                   <label for="number">Número</label>
                   <input type="number" id="number" name="number" />
                 </div>
               </div>
-              <img src="" alt="" />
 
               <div class="flex">
                 <div class="input-wrapper flex-2">
@@ -154,7 +160,7 @@
                   />
                 </div>
 
-                <div class="input-wrapper flex-1">
+                <div class="input-wrapper flex-1 m20">
                   <label for="state">Estado</label>
                   <input
                     type="text"
@@ -165,6 +171,7 @@
                   />
                 </div>
               </div>
+              
             </fieldset>
 
             <fieldset class="guardian">
@@ -236,7 +243,6 @@
                 >
 
                 <div class="radio-wrapper">
-
                   <div class="radio-inner">
                     <div class="radio-image"></div>
 
@@ -246,7 +252,7 @@
 
                     <label for="">Futebol</label>
                   </div>
-                  
+
                   <div class="radio-inner">
                     <div class="radio-image"></div>
 
@@ -256,7 +262,7 @@
 
                     <label for="">Basquete</label>
                   </div>
-                  
+
                   <div class="radio-inner">
                     <div class="radio-image"></div>
 
@@ -266,7 +272,7 @@
 
                     <label for="">Natação</label>
                   </div>
-                  
+
                   <div class="radio-inner">
                     <div class="radio-image"></div>
 
@@ -286,7 +292,7 @@
 
                     <label for="">Volley</label>
                   </div>
-                  
+
                   <div class="radio-inner">
                     <div class="radio-image"></div>
 
@@ -296,37 +302,38 @@
 
                     <label for="">Boxe</label>
                   </div>
-
-
-
                 </div>
               </div>
-
-
             </fieldset>
 
             <div class="terms-wrapper input-wrapper checkbox-wrapper">
               <div class="checkbox-image"></div>
-              <input type="checkbox" name="
-              terms" id="terms">
-              <label for="terms">Declaro que li e concordo com os <span><a href="#">Termos e Condições</a></span> e com a <span><a href="#">Política de Privacidade</a></span> da escola Estrela do Amanhã. </label>
+              <input
+                type="checkbox"
+                name="
+              terms"
+                id="terms"
+              />
+              <label for="terms"
+                >Declaro que li e concordo com os
+                <span><a href="#">Termos e Condições</a></span> e com a
+                <span><a href="#">Política de Privacidade</a></span> da escola
+                Estrela do Amanhã.
+              </label>
             </div>
 
             <div class="actions-wrapper">
               <button class="btn-secondary" type="button">
-Salvar respostas
+                Salvar respostas
               </button>
 
-              <button class="btn-primary" type="submit"> 
-                Fazer matrícula
-              </button>
+              <button class="btn-primary" type="submit">Fazer matrícula</button>
             </div>
-
           </form>
         </div>
       </main>
 
-      <aside>
+      <aside class="desktop-only">
         <div class="aside-container">
           <header>
             <img src="./assets/logo.svg" alt="school logo" />
